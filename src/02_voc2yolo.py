@@ -39,6 +39,7 @@ def process_dataset(val_ratio=0.2):
     
     # 获取所有图片列表
     xml_files = list(XML_DIR.glob("*.xml"))
+    random.seed(42) # 固定随机种子以保证可复现性
     random.shuffle(xml_files)
     
     val_size = int(len(xml_files) * val_ratio)
