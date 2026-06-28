@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+venv/
+.env/
+
+# IDE
+.idea/
+.vscode/
+
+# 巨大的模型权重文件（GitHub限制大文件，不要传）
+*.pt
+*.pth
+*.pkl
+
+# 原始数据集和废弃文件（绝对不能传，太大了）
+excluded_files/
